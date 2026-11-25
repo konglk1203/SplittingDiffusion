@@ -1,0 +1,6 @@
+# Real projective plane RP^2 (paper Sec. 4.2, Fig. 4 (b, e)).  Data: generate_data/generate_rp2_data.py
+problem_name: "rp2"
+data_path: "./dataset/rp2_gmm_data.npy"
+net_name: "resnet"
+model_hidden_dim: 256
+model_blocks: 4

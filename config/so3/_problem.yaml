@@ -1,0 +1,9 @@
+# Gaussian mixture on SO(3) (paper Sec. 4.3, Tab. 2).  The dataset is the one of
+# TDM (Zhu et al., 2024): 100k rotations from a 32-component mixture in so(3).
+problem_name: "so3"
+data_path: "./dataset/rsgm_SO3_32_batch_100000.npy"
+net_name: "resnet"
+model_hidden_dim: 512
+model_blocks: 10
+lr: 0.0002
+warmup_steps: 2000

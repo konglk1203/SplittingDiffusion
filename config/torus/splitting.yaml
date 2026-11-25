@@ -1,0 +1,12 @@
+# Splitting diffusion on T^2 (quick-start example, trains in a few minutes).
+base_configs:
+  - "../_base/optim.yaml"
+  - "../_base/eval.yaml"
+  - "../_base/algo_splitting.yaml"
+  - "../_base/grid_uniform.yaml"
+  - "./_problem.yaml"
+T: 5.0
+interval: 100
+num_iterations: 4000
+train_bs_x: 256
+train_bs_t: 16

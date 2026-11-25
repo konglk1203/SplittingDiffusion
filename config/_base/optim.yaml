@@ -1,0 +1,4 @@
+# Shared optimizer defaults.  lr / warmup_steps differ per problem and live in
+# each problem's _problem.yaml.  (AdamW, cosine schedule: options.py defaults.)
+l2_norm: 0.0
+ema_decay: 0.999

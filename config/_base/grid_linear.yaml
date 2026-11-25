@@ -1,0 +1,6 @@
+# Non-uniform splitting scheduler (paper Def. 1) dense at the data end t = 0:
+# the first h_min_steps intervals have length h_min, the remaining ones grow
+# linearly so that all steps sum to T.  Requires T and interval.
+time_grid: "linear"
+h_min: 0.0005
+h_min_steps: 1

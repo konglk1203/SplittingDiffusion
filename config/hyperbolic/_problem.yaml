@@ -1,0 +1,12 @@
+# Hyperbolic plane H^2, Lorentz model (paper Sec. 4.2, Fig. 4 (c, f)).  Non-compact:
+# the confining potential U(x) = d(x,o)^2 / (2 potential_sigma^2) gives a wrapped-normal
+# stationary law.  Data: generate_data/generate_h2_data.py
+problem_name: "hyperbolic"
+manifold_dim: {dim: 2}
+data_path: "./dataset/h2_wgmm.npy"
+potential_sigma: 1.0
+net_name: "resnet"
+model_hidden_dim: 256
+model_blocks: 6
+lr: 0.0002
+warmup_steps: 500

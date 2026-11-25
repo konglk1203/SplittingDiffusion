@@ -1,0 +1,8 @@
+# Klein bottle (paper Sec. 4.2, Fig. 4 (a, d)).  Data: generate_data/generate_klein_bottle_data.py
+problem_name: "klein_bottle"
+data_path: "./dataset/klein_bottle_2d_data.npy"
+net_name: "resnet"
+model_hidden_dim: 256
+model_blocks: 4
+lr: 0.0005
+warmup_steps: 500

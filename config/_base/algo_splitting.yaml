@@ -1,0 +1,10 @@
+# Splitting diffusion defaults (paper Sec. 3).
+algo: "splitting"
+T: 5                        # terminal time t_N
+interval: 20                # N, number of splitting intervals (Algo. 2)
+traj_reuse: 1               # N_reuse (Algo. 3): refresh the cached forward chains every epoch
+train_bs_t: 1               # M_t: time samples per cached chain and step
+delta_min_ratio: 0.05       # epsilon: OU displacement delta drawn in [0.05 h_n, h_n]
+dsm_loss_weight: "none"     # unweighted score MSE (all reported runs); "local" = the weight shown in Algo. 3
+score_parametrization: "residual_v"   # network output f(x,v,t) - v (stationary score is -v)
+eval_refine: 5              # R, reverse-OU sub-steps per interval at inference (Algo. 4)

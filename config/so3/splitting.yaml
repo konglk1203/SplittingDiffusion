@@ -1,0 +1,8 @@
+# Splitting diffusion on SO(3) (paper Tab. 2).
+base_configs:
+  - "../_base/optim.yaml"
+  - "../_base/eval.yaml"
+  - "../_base/algo_splitting.yaml"
+  - "../_base/grid_linear.yaml"
+  - "./_problem.yaml"
+train_bs_x: 256

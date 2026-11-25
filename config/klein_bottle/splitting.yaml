@@ -1,0 +1,12 @@
+# Splitting diffusion on the Klein bottle (paper Fig. 4 (d): 6000 steps, SDE sampler).
+base_configs:
+  - "../_base/optim.yaml"
+  - "../_base/eval.yaml"
+  - "../_base/algo_splitting.yaml"
+  - "../_base/grid_uniform.yaml"
+  - "./_problem.yaml"
+T: 5.0
+train_bs_x: 256
+train_bs_t: 16
+num_iterations: 6000
+infer_ode: false

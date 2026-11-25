@@ -1,0 +1,12 @@
+# Flat torus T^2 with a 7-component Gaussian mixture (paper Sec. 4.1).
+# Data: generate_data/generate_torus_gmm.py (also writes the mixture parameters
+# used by the analytic checks in analysis/).
+problem_name: "torus"
+manifold_dim: {dim: 2}
+data_path: "./dataset/torus_gmm_t2.npy"
+net_name: "resnet"
+model_hidden_dim: 256
+model_blocks: 5
+lr: 0.0005
+warmup_steps: 500
+check_val_every_n_steps: 500

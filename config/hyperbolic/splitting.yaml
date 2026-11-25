@@ -1,0 +1,15 @@
+# Splitting diffusion on H^2 (paper Fig. 4 (f): 3000 steps).  Finer grid than the
+# compact problems because H^2 geodesics are sensitive to large steps.
+base_configs:
+  - "../_base/optim.yaml"
+  - "../_base/eval.yaml"
+  - "../_base/algo_splitting.yaml"
+  - "../_base/grid_linear.yaml"
+  - "./_problem.yaml"
+T: 5
+interval: 40
+train_bs_x: 512
+train_bs_t: 16
+traj_reuse: 5
+num_iterations: 3000
+infer_ode: false

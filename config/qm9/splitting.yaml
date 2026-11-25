@@ -1,0 +1,15 @@
+# Splitting diffusion on QM9 / St(n, 4) (paper Tab. 4 and Tab. 7).
+#   velocity_sigma = 0.5 was selected on n = 20 (sweep 0.06 / 0.12 / 0.24 / 0.48 / 1.0;
+#   the automatic 1/sqrt(dim) ~ 0.12 is too small here) and reused for every n.
+base_configs:
+  - "../_base/optim.yaml"
+  - "../_base/eval.yaml"
+  - "../_base/algo_splitting.yaml"
+  - "../_base/grid_linear.yaml"
+  - "./_problem.yaml"
+T: 5
+interval: 20
+train_bs_x: 64
+train_bs_t: 16
+traj_reuse: 1
+velocity_sigma: 0.5

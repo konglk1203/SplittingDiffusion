@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.sw?
+
+# Training runs (checkpoints, offline wandb logs)
+SplittingDiffusion/
+wandb/
+*.ckpt
+*.log
+
+# Data (regenerate with generate_data/; the SO(3) dataset is tracked explicitly)
+dataset/*
+!dataset/rsgm_SO3_32_batch_100000.npy
+
+# Generated figures, samples, notebook cache
+figures/
+samples/
+notebook_cache/
+*.png
+*.pdf

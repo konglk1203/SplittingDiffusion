@@ -1,0 +1,12 @@
+# QM9 conformations on St(n, 4), one model per atom count n (paper Sec. 4.4, Tab. 7).
+# Pass --n_atoms n: selects dataset/qm9_by_size/qm9_N<n>.npy (see
+# generate_data/preprocess_qm9_by_size.py) and the manifold St(n, 4).
+problem_name: "qm9"
+net_name: "dit"
+model_hidden_dim: 512
+model_num_heads: 8
+model_blocks: 5
+lr: 0.0002
+warmup_steps: 2000
+num_iterations: 200000
+check_val_every_n_steps: 5000

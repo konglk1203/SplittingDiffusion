@@ -1,0 +1,9 @@
+# Riemannian Flow Matching on QM9 / St(n, 4) (paper Tab. 4 and Tab. 7).
+base_configs:
+  - "../_base/optim.yaml"
+  - "../_base/eval.yaml"
+  - "../_base/algo_rfm.yaml"
+  - "../_base/grid_uniform.yaml"
+  - "./_problem.yaml"
+train_bs_x: 128
+eval_refine: 100

@@ -1,0 +1,7 @@
+# Riemannian Flow Matching baseline.  The flow horizon is T = 1 and one time is
+# drawn per data point (train_bs_t = 1).  eval_refine is the number of Euler
+# steps of the learned ODE at inference (= NFE).
+algo: "rfm"
+T: 1.0
+train_bs_t: 1
+eval_refine: 100

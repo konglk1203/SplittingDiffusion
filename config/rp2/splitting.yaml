@@ -1,0 +1,13 @@
+# Splitting diffusion on RP^2 (paper Fig. 4 (e): 20000 steps, SDE sampler).
+base_configs:
+  - "../_base/optim.yaml"
+  - "../_base/eval.yaml"
+  - "../_base/algo_splitting.yaml"
+  - "../_base/grid_uniform.yaml"
+  - "./_problem.yaml"
+train_bs_x: 256
+train_bs_t: 16
+lr: 0.0005
+warmup_steps: 500
+num_iterations: 20000
+infer_ode: false

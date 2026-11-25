@@ -1,0 +1,4 @@
+# Uniform splitting scheduler (paper Def. 1): t_n = n T / N.
+time_grid: "uniform"
+h_min: null
+h_min_steps: null
